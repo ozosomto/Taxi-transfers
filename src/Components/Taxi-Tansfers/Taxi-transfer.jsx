@@ -164,7 +164,7 @@ const CyprusTaxiTransfers = () => {
 
               >
                 {/* <img src="/v-class-4.webp" alt="" className='my-2 w-48 h-auto object-cover rounded-md' /> */}
-                🚗 Airport Transfer
+                {/* 🚗 Airport Transfer */}
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2 text-gray-800">
