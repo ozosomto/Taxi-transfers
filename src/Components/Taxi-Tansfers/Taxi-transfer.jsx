@@ -156,7 +156,14 @@ const CyprusTaxiTransfers = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {routes.map((route, index) => (
             <div key={index} className="bg-white rounded-2xl shadow-xl overflow-hidden hover:transform hover:-translate-y-2 transition-all duration-300">
-              <div className="h-48 bg-gradient-to-br from-sky-300 to-blue-600 flex items-center justify-center text-white text-lg font-bold">
+              <div className="h-48 flex items-center justify-center text-white text-lg font-bold"
+              
+                            style={{ backgroundImage: 'url(/V-Class-3.avif)',
+                        objectFit: 'cover'
+                }}             
+
+              >
+                {/* <img src="/v-class-4.webp" alt="" className='my-2 w-48 h-auto object-cover rounded-md' /> */}
                 🚗 Airport Transfer
               </div>
               <div className="p-6">
