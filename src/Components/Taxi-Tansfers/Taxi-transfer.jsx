@@ -29,11 +29,20 @@ const CyprusTaxiTransfers = () => {
   };
 
   const routes = [
-    { title: 'Larnaca Airport to Ayla Napa', price: '€ 54' },
-    { title: 'Larnaca Airport to Limassol', price: '€ 64' },
-    { title: 'Larnaca Airport to Nicosia', price: '€ 50' },
-    { title: 'Larnaca Airport to Protaras', price: '€ 54' },
-    { title: 'Larnaca Airport to Paphos', price: '€ 95' }
+    { title: 'Larnaca Airport to Ayla Napa',
+      price: '€ 54',
+      Image:   '/images/v-class-6.jpg'
+     },
+
+    { title: 'Larnaca Airport to Limassol',
+      price: '€ 64' ,
+      Image:   '/images/road-img.jpg'
+        },
+    { title: 'Larnaca Airport to Nicosia',
+      price: '€ 50',
+      Image: '/images/highway-skyline.webp'
+     },
+   
   ];
 
   const features = [
@@ -53,17 +62,18 @@ const CyprusTaxiTransfers = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex flex-col justify-center items-center text-center px-4 overflow-hidden"
+      <section className="relative min-h-screen  flex flex-col justify-center items-center text-center px-4 overflow-hidden"
                
-               style={{ backgroundImage: 'url(/Mercedes-Benz-V.avif)',
-                        objectFit: 'cover'
+               style={{ backgroundImage: 'url(/mercedes-benz-v-klass.jpg)',
+                        objectFit: 'cover',
+
                 }}
         
         >
         {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
+        {/* <div className="absolute inset-0 opacity-10">
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white rounded-full"></div>
-        </div>
+        </div> */}
         
         <div className="relative z-10 max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 uppercase tracking-wider">
@@ -156,10 +166,13 @@ const CyprusTaxiTransfers = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {routes.map((route, index) => (
             <div key={index} className="bg-white rounded-2xl shadow-xl overflow-hidden hover:transform hover:-translate-y-2 transition-all duration-300">
-              <div className="h-48 flex items-center justify-center text-white text-lg font-bold"
+              <div className="h-48 flex items-center  justify-center text-white text-lg font-bold"
               
-                            style={{ backgroundImage: 'url(/V-Class-3.avif)',
-                        objectFit: 'cover'
+                            style={{ backgroundImage:  `url(${route.Image})`,
+                        objectFit: 'cover',
+                        objectPosition: 'center'
+                       
+                        
                 }}             
 
               >
